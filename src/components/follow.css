@@ -1,0 +1,44 @@
+.follow-container {
+  position: fixed;
+  margin-left: 40px;
+  bottom: 60px;
+  transform: translateX(-0%);
+  background: transparent;
+  padding: 12px 24px;
+  border-radius: 999px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #A89D9D;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  z-index: 1000;
+}
+.follow-container span {
+  font-size: 20px;
+  color: #000;
+}
+.follow-container button {
+  background: none;
+  border: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.icon-wrapper {
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 999px;
+  background-color: white;
+}
+.social-icon {
+  width: 70%;
+  height: 40%;
+  object-fit: contain;
+}
