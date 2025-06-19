@@ -7,7 +7,7 @@
 }
 .subtitle {
   font-size: 1.2rem;
-  color: #555;
+  color: #05182E;
   text-align: center;
   margin-bottom: 2rem;
   font-weight: 400;
@@ -29,22 +29,119 @@
   }
 }
 .card {
-  color: #000;
-  padding: 20px;
-  height: 350px;
-  width: 370px;
-  border-radius: 10px;
-  line-height: 30px;
-  margin-top: 20px;
-  border-color: #555;
-  border-style: solid;
-  border-width: 0.5px;
+  width: 350px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  background-color: #e8e8e8;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+}
+.card::before {
+  content: "";
+  width: 350px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom: 3px solid #fefefe;
+  background: linear-gradient(40deg, #05182E 0%, #3E1A6D 50%, #05182E 100%);
+  transition: all 0.5s ease;
 }
 .grid-container :hover{
-    background-color: #05182E;
-    color: #fff;
-    transition: 0.8ms ease;
+    transition: 3ms ease;
     cursor: pointer;
+}
+.card * {
+  z-index: 1;
+}
+.image {
+  width: 90px;
+  height: 90px;
+  background-color: #facc15;
+  border-radius: 50%;
+  border: 4px solid #fefefe;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; 
+  transition: all 0.5s ease;
+}
+.card-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  transition: all 0.5s ease;
+}
+.card-icon {
+  width: 30px;
+  height: 36px;
+  stroke-width: 2.5;
+  transition: all 0.3s ease;
+}
+.card-info span {
+  font-weight: 600;
+  font-size: 24px;
+  color: #161A42;
+  margin-top: 15px;
+  line-height: 5px;
+}
+.card-info p {
+  color: #000;
+  font-size: 16px;
+}
+.book-now {
+  width: 120px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  background-color: #facc15;
+  color: #000;
+  padding: 6px 20px;
+  border-radius: 20px;
+  transition: all 0.5s ease;
+}
+.card:hover::before {
+  width: 350px;
+  height: 300px;
+  border-bottom: none;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  transform: scale(0.95);
+}
+.card:hover .card-info span,
+.card:hover .card-info p {
+  color: #ffffff;
+}
+.card:hover .card-info {
+  transform: translate(0%,-25%);
+}
+.card:hover .image {
+  transform: scale(2) translate(-60%,-40%);
+}
+.card:hover .card-icon{
+  margin-top: 20px;
+}
+.book-now:hover {
+  background-color: #facc15;
+  transform: scale(1.1);
+}
+.image img {
+  width: 120%;
+  height: auto;
+  object-fit: contain;
 }
 .card1{
     h2{
@@ -80,3 +177,19 @@
         margin-top: 10px;
     }
 }
+.card .book-now .icon {
+  opacity: 0;
+  margin-left: 0px;
+  transition: opacity 0.3s ease, margin-left 0.3s ease;
+  pointer-events: none;
+  background: transparent;
+  outline: none;
+  box-shadow: none;
+  color: #000;
+}
+.card .book-now:hover .icon {
+  opacity: 1;
+  margin-left: 8px;
+  margin-top: 4px;
+}
+

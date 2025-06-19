@@ -12,13 +12,15 @@ function Hero() {
     <p className='sub-text'>
       Bring intelligence to your home, garden, and workspace.
     </p>
-    <button className="explore-now-btn">
+    <a href='#services'>
+        <button className="explore-now-btn">
         <span className="dot-bg"></span>
         <span className="btn-content">
         <span className="btn-text">Explore Now</span>
         <img src="src/assets/ArrowUpward.png" className="arrow-img" alt="Arrow" />
         </span>
     </button>
+    </a>
   </div>
   <div className="hero-image">
     <img src="/assets/smart-garden.gif" alt="Smart Garden Automation" />

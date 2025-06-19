@@ -18,10 +18,17 @@ export default function Navbar() {
             duration={500}
             offset={-40}
           >
-            About
+            About Us
           </Link></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">Services</a></li>
+          <li><Link
+            to="services"
+            smooth={true}
+            duration={500}
+            offset={-40}
+          >
+            Services
+          </Link></li>
+          <li><a href='#'>Products</a></li>
           <li><a href="#">Contact Us</a></li>
           <li><a href="#">Opportunities</a></li>
         </ul>
