@@ -26,12 +26,17 @@ function Hero() {
     <img src="/assets/smart-garden.gif" alt="Smart Garden Automation" />
   </div>
 
-  <div className="hero-buttons">
+  {/* <div className="hero-buttons">
     <div className="book-btn">Book A Service Now</div>
-    <button className="sent-btn">
+    <button className="sent-btn" onClick={() => {
+    const element = document.getElementById('services');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }}>
       <img src="src/assets/Sent.png" alt="Send" />
     </button>
-  </div>
+  </div> */}
 </section>
   );
 }

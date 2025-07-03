@@ -6,7 +6,7 @@ import Follow from './follow';
 const Contactus = () => {
   const [isB2B, setIsB2B] = useState(false);
   return (
-    <div className="contactus">
+    <div className="contactus" id='contact'>
       <div className="b2b-wrapper">
         <button className="b2b-btn" onClick={() => setIsB2B(!isB2B)}>
         <span className="dot-background"></span>
