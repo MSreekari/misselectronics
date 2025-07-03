@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+.intro h2 {
+    text-align: center;
+    font-family: 'Mulish', 'sans-serif';
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+.card-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+.profile-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.profile h2,
+.profile p {
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.card:hover .profile h2,
+.card:hover .profile p {
+    opacity: 1;
+    transform: translateY(0);
+    color: #fff;
+}

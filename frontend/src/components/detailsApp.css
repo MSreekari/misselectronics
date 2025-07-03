@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+.app-container{
+    height: 420px;
+    width: 1270px;
+    padding: 20px;
+    background-color: #05182E;
+    border-radius: 20px;
+    margin-left: 120px;
+    margin-right: 70px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #fff;
+}
+.app-container h2{
+    margin-bottom: 20px;
+    margin-top: 50px;
+    margin-left: 30px;
+    font-size: 40px;
+}
+.app-container p{
+    margin-left: 30px;
+}
+.apple-store{
+    height: 70px;
+    width: 180px;
+    margin-left: 30px;
+    background-color: #fff;
+    color: black;
+}

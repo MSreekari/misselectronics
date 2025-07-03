@@ -9,7 +9,8 @@ export default function Navbar() {
     <nav className="navbar">
       <div className="navbar-container">
         <div className="logo">
-          <img src='src/assets/Logo.png' className='logo-image'></img>
+          {/* <img src='src/assets/Logo.png' className='logo-image'></img> */}
+          <p>MissElectronics</p>
         </div>
         <ul className={`nav-links ${isOpen ? 'open' : ''}`}>
           <li><Link
@@ -29,8 +30,21 @@ export default function Navbar() {
             Services
           </Link></li>
           <li><a href='#'>Products</a></li>
-          <li><a href="#">Contact Us</a></li>
-          <li><a href="#">Opportunities</a></li>
+          <li><Link
+            to="contactus"
+            smooth={true}
+            duration={500}
+            offset={-40}
+          >
+            Contact Us
+          </Link></li>
+          <li><Link
+            to="opp-container"
+            smooth={true}
+            duration={500}
+            offset={-40}
+          >Opportunities
+          </Link></li>
         </ul>
         
         <div className="hamburger" onClick={() => setIsOpen(!isOpen)}>

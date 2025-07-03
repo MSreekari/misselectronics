@@ -1,6 +1,10 @@
+.follow-content-section-wrapper{
+  position: absolute;
+}
 .follow-container {
-  position: fixed;
-  margin-left: 40px;
+  position: relative;
+  margin-left: 20px;
+  margin-top: 80px;
   bottom: 60px;
   transform: translateX(-0%);
   background: transparent;

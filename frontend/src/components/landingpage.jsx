@@ -4,6 +4,9 @@ import Hero from './hero';
 import Follow from './follow';
 import About from './about';
 import { Services } from './services';
+import Contactus from './contactus';
+import Footer from './footer';
+import Opportunities from './opportunities';
 
 const LandingPage = () => {
   return (
@@ -13,6 +16,9 @@ const LandingPage = () => {
       <Follow />
       <About />
       <Services />
+      <Opportunities />
+      <Contactus />
+      <Footer />
     </div>
   )
 }

@@ -8,7 +8,8 @@ import medium from '../assets/Medium.png';
 
 export default function Follow() {
   return (
-    <div className="follow-container">
+    <div className="follow-content-section-wrapper">
+      <div className="follow-container">
       <span>Follow</span>
       <button className='icom-wrapper'><img src={X} className="social-icon" alt="Twitter" /></button>
       <button className='icom-wrapper'><img src={facebook} className="social-icon" alt="Facebook" /></button>
@@ -16,6 +17,7 @@ export default function Follow() {
       <button className='icom-wrapper'><img src={linkedin} className="social-icon" alt="LinkedIn" /></button>
       <button className='icom-wrapper'><img src={medium} className="social-icon" alt="Medium" /></button>
       <button className='icom-wrapper'><img src={youtube} className="social-icon" alt="YouTube" /></button>
+    </div>
     </div>
   );
 }

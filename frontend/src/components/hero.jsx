@@ -26,7 +26,6 @@ function Hero() {
     <img src="/assets/smart-garden.gif" alt="Smart Garden Automation" />
   </div>
 
-  {/* Place the hero-buttons at the bottom-right */}
   <div className="hero-buttons">
     <div className="book-btn">Book A Service Now</div>
     <button className="sent-btn">
