@@ -31,7 +31,7 @@ export const Services = () => {
               <span>Smart Garden Automation</span>
               <p>
                 Monitor and water your garden automatically with intelligent,
-                eco-friendly control systems.
+                eco-friendly systems.
               </p>
             </div>
             <button

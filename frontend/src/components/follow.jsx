@@ -11,10 +11,25 @@ export default function Follow() {
     <div className="follow-content-section-wrapper">
       <div className="follow-container">
       <span>Follow</span>
-      <button className='icom-wrapper'><img src={X} className="social-icon" alt="Twitter" /></button>
+      <button className='icom-wrapper'><img src={X} className="social-icon" alt="Twitter"/></button>
       <button className='icom-wrapper'><img src={facebook} className="social-icon" alt="Facebook" /></button>
-      <button className='icom-wrapper'><img src={instagram} className="social-icon" alt="Instagram" /></button>
-      <button className='icom-wrapper'><img src={linkedin} className="social-icon" alt="LinkedIn" /></button>
+    <button
+      className='icom-wrapper'
+      onClick={() => {
+        window.open(
+          'https://www.instagram.com/miss_electronics/',
+          '_blank'
+        );
+      }}
+    >
+      <img src={instagram} className="social-icon" alt="Instagram" />
+    </button>
+      <button className='icom-wrapper'><img src={linkedin} className="social-icon" alt="LinkedIn" onClick={() =>
+    window.open(
+      'https://www.linkedin.com/company/miss-my-internet-smart-systems/',
+      '_blank'
+    )
+  }/></button>
       <button className='icom-wrapper'><img src={medium} className="social-icon" alt="Medium" /></button>
       <button className='icom-wrapper'><img src={youtube} className="social-icon" alt="YouTube" /></button>
     </div>

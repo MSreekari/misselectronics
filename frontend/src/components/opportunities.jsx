@@ -11,16 +11,7 @@ const Opportunities = () => {
       <div class="card">
         <div className="profile">
           <div className="profile-image">
-            <img src="#" alt="CEO"/>
-          </div>
-          <h2>Md Latheef Ahmed</h2>
-          <p>Founder & CEO</p>
-        </div>
-      </div>
-      <div class="card">
-                <div className="profile">
-          <div className="profile-image">
-            <img src="#" alt="CEO"/>
+            <img src="#" alt=""/>
           </div>
           <h2>Md Latheef Ahmed</h2>
           <p>Founder & CEO</p>
@@ -29,10 +20,10 @@ const Opportunities = () => {
       <div class="card">
           <div className="profile">
           <div className="profile-image">
-            <img src="#" alt="CEO"/>
+            <img src="#" alt=""/>
           </div>
-          <h2>Md Latheef Ahmed</h2>
-          <p>Founder & CEO</p>
+          <h2>Kadari Sairam</h2>
+          <p>Product Design - Fusion & Generalist</p>
         </div>
       </div>
       </div>
